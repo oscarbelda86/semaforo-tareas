@@ -18,8 +18,14 @@
         </li>
 
         <li>
-            <button type="submit" [routerLink]="['/lista']" routerLinkActive="router-link-active" (click)="agregarNota()">Crear</button>
+            <button type="submit" [routerLink]="['/lista']" routerLinkActive="router-link-active" (click)="agregarNota()" (click)="display=true">Crear</button>
             <button id="limpiar" (click)="limpiarDatos()" >Cancelar</button>
         </li>
     </ul>
 </form>
+
+
+<div *ngIf="display">
+<app-listanotas></app-listanotas>
+</div>
+

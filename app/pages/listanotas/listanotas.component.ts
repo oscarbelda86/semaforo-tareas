@@ -19,4 +19,13 @@ export class ListanotasComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  eliminarnota(indice:number){
+    this.Lista.splice(indice,1);
+    console.log(this.Lista);
+  }
+
+  editarnota(indice:number){
+    console.log(this.Lista);
+  }
+
 }

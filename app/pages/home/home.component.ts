@@ -1,6 +1,6 @@
 import { Component, OnInit, } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import {Notas,listanotas} from '../../interfaces/notas';
+import {listanotas} from '../../interfaces/notas';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   
   formulario:FormGroup;
   estados:Array<String>=["Iniciada","En proceso", "Finalizada"];
-  
+  display = false;
   
   constructor(public form:FormBuilder) { 
     this.formulario=this.form.group({
@@ -35,5 +35,7 @@ export class HomeComponent implements OnInit {
     listanotas.push({titulo:this.formulario.value["titulo"],estado:this.formulario.value["estados"]});
     console.log(listanotas);
   }
+
+  
 
 }

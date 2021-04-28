@@ -1,6 +1,6 @@
-<ul *ngFor="let item of Lista">
+<ul *ngFor="let item of Lista; let i=index">
     <li id="iniciado" *ngIf="item.estado=='Iniciada' ">
-        <p id="nota" >{{item.titulo}}</p>
+        <p id="nota" >{{item.titulo}}</p> <button (click)="eliminarnota(i)">X</button>
     </li>
 </ul>
     
@@ -15,3 +15,4 @@
         <p id="nota" >{{item.titulo}}</p>
     </li>
 </ul>
+
