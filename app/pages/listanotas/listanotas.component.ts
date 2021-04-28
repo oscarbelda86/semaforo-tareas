@@ -12,8 +12,9 @@ export class ListanotasComponent implements OnInit {
   Lista = listanotas;
   
   constructor() { 
-
+    
   }
+
 
   ngOnInit(): void {
   }

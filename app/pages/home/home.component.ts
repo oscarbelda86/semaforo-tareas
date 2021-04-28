@@ -15,7 +15,6 @@ export class HomeComponent implements OnInit {
   
   constructor(public form:FormBuilder) { 
     this.formulario=this.form.group({
-      id:["",[Validators.required]],
       titulo:['',[Validators.required,]],
       estados:['',[Validators.required]]
     });
@@ -33,7 +32,8 @@ export class HomeComponent implements OnInit {
   }
   
   agregarNota(){
-    listanotas.push({"titulo":this.formulario.value["titulo"],"estado":this.formulario.value["estado"]})
+    listanotas.push({titulo:this.formulario.value["titulo"],estado:this.formulario.value["estados"]});
+    console.log(listanotas);
   }
 
 }

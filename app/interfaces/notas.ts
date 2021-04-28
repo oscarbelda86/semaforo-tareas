@@ -1,6 +1,6 @@
 export interface Notas {
-    titulo?:string,
-    estado?:string
+    titulo:string,
+    estado:string
 }
 
 export const listanotas:Array<Notas>=

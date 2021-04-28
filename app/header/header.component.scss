@@ -1,4 +1,18 @@
+#container{
+    
+    display:inline-flex;
+}
+
 #titulo{
     font-size:25px;
     font-weight: bold;
+}
+
+#semaforo{
+    display: flex;
+}
+
+
+img{
+    width: 40px;
 }

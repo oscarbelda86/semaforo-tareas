@@ -1,6 +1,17 @@
-
-<ul>
-    <li *ngFor="let item of Lista">
-        <p id="nota">{{item.titulo}}</p>
+<ul *ngFor="let item of Lista">
+    <li id="iniciado" *ngIf="item.estado=='Iniciada' ">
+        <p id="nota" >{{item.titulo}}</p>
+    </li>
+</ul>
+    
+<ul *ngFor="let item of Lista">
+    <li id="enproceso" *ngIf="item.estado=='En proceso'">
+        <p id="nota" >{{item.titulo}}</p>
+    </li>
+</ul>
+    
+<ul *ngFor="let item of Lista">
+    <li id="finalizado" *ngIf="item.estado=='Finalizada'">
+        <p id="nota" >{{item.titulo}}</p>
     </li>
 </ul>
