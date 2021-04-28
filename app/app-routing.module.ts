@@ -6,7 +6,7 @@ import { EditarnotaComponent } from '../app/pages/editarnota/editarnota.componen
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
-  {path:'editar:titulo',component:EditarnotaComponent}
+  {path:'editar/:titulo',component:EditarnotaComponent}
   
 
 ];

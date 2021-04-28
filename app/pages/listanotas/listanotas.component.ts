@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Notas, listanotas} from '../../interfaces/notas';
+import {listanotas} from '../../interfaces/notas';
+import { RouterModule } from '@angular/router';
 
 
 @Component({

@@ -15,7 +15,9 @@ export class EditarnotaComponent implements OnInit {
     this.ruta2 = this.ruta.params.subscribe(parametros=>{
       this.titulo = parametros['titulo'];
       console.log(this.titulo)
-  })
+  });
   }
+
+  
 
 }

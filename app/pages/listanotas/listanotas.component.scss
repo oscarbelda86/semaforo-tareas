@@ -1,18 +1,44 @@
 #iniciado{
     background-color: red;
-    width: fit-content;
+
 }
 
 #enproceso{
     background-color: yellow;
-    width: fit-content;
+    
 }
 
 #finalizado{
     background-color: green;
-    width: fit-content;
+    
+}
+
+.nota{
+    
+    border:0.1em solid black;
+    width: 10%;
+    padding: 0.35em 1.2em;
+    font-size:18px;
+}
+
+.nota button{
+    background: none;
+    border: none;
+    font-size:18px;
+    
+    
+}
+
+#eliminar:hover{
+    cursor: pointer;
 }
 
 ul{
-    
+    list-style-type: none;
+
 }
+
+#lista{
+    overflow: hidden;
+}
+

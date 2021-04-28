@@ -33,9 +33,8 @@ export class HomeComponent implements OnInit {
   
   agregarNota(){
     listanotas.push({titulo:this.formulario.value["titulo"],estado:this.formulario.value["estados"]});
-    console.log(listanotas);
   }
 
-  
+
 
 }
